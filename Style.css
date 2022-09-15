@@ -16,7 +16,7 @@ body {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: #1a0d34;
+    background-color:#1a0d34;
     color: rgb(239, 230, 230);
 }
 
@@ -91,9 +91,216 @@ span{
 }
 
 .main img{
-    width: 350px;
-    height: 400px;
-    border: 7px solid #dfb80d;
+    width: 400px;
+    height: 580px;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+}
+
+.about img{
+    width: 100%;
+    grid-column: 1/5;
+}
+
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info h2 {
+    font-size: 2em;
+    color: #1a0d34;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: #dfb80d;
+    margin-top: 1px;
+    margin-bottom: 2em;
+}
+
+.about p {
+    margin-bottom: 1em;
+}
+
+.portfolio{
+    width: 100vw;
+    background-color: #1a0d34;
+} 
+
+.portfolio-headings{
+    width: 100vw;
+    padding: 1em;
+
+}
+
+.portfolio-headings h2{
+    font-size: 3em;
+    color: aliceblue;
+    justify-content: center;
+}
+
+.portfolio .container{
+    width: 80vw;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    color: aliceblue;
+    margin: 5em;
+}
+
+.card__img{
+    width: 100%;
+    height: 200px;
+    background-image: url(./imagenes/business-pug-working-on-laptop.jpg);
+    background-size: cover; 
+ }
+ 
+ .card__title h2 {
+    padding: 20px;
+ }
+
+ .card .projects-links  {
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .card .projects-links a {
+    color:aliceblue;
+    text-decoration: none;
+ }
+
+ .card .projects-links i {
+    font-size: 1.5em;
+ }
+
+ .card .project-details {
+    margin: 0 auto;
+    margin: 1em;
+    width: 50%;
+ }
+
+ .card .project-details a {
+    text-decoration: none;
+    color:#1a0d34;;
+ }
+
+ .proyect-details-content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+ }
+
+ .contact-section {
+    background-color: #1a0d34;
+    padding: 1em;
+    width: 100vw;
+}
+
+ .contact-headings h2 {
+    font-size: 3em;
+    color: white;
+ }
+
+ .container-contact {
+    padding: 3em;
+    margin: 3em;
+    display: flex;
+ }
+
+ .contact-form {
+    margin: 5em;
+    padding: 3em;
+    justify-content: center;
+ }
+
+ .contact-form h4 {
+    color:white;
+    text-transform: uppercase;
+ }
+
+ .container-contact img {
+    width: 800px;
+    height: 600px;
+    bottom: 0px;
+ }
+
+ .form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+ }
+
+ .form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: white;
+    border-bottom: 1px solid white;
+    color: white;
+ }
+
+ .form textarea {
+    height: 150px;
+    background-color:#1a0d34;
+    color: white;
+    padding: 1.5em;
+    border: 1px solid white;
+ }
+
+ .btn-submit {
+    padding: 10px 20px;
+    background-color: #f3c80d;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px #dfb80d;
+ }
+
+ .btn-submit:hover {
+    background-color:white;
+    box-shadow: none;
+    color:#1a0d34;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color:#dfb80d;
+}
+
+.footer-content h2{
+    font-size: 3em;
+}
+
+.footer-content h5, 
+.sotial-network i{
+    font-size: 1.5em;
+}
+
+.sotial-network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
 }
 
 
