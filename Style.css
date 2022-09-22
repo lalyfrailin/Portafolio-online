@@ -59,6 +59,11 @@ body {
     transition: ease-in-out .5s;
 }
 
+.toggle-menu, 
+.info-content_subtitle {
+    display: none;
+}
+
 .main{
     margin: 0 auto;
     width: 80vw;
@@ -69,7 +74,7 @@ body {
 }
 
 h1{
-    font-size: 3em;
+    font-size: clamp(3vw, 1.5em, 3em)
 }
 span{
     color: #f3c80d;
@@ -101,9 +106,8 @@ span{
     width: 100vw;
 }
 
-.about img{
-    width: 100%;
-    grid-column: 1/5;
+.about video{
+
 }
 
 .about-info{
