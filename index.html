@@ -16,24 +16,29 @@
                 <div class="brand"> 
                 <h2>FRAILIN <span>PERNALETE</span></h2>
                 </div>
-                <ul class="menu">
+                <ul class="menu" id="menu">
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#">About me</a></li>
                     <li><a href="#">Portafolio</a></li>
                     <li><a href="#">Contact me</a></li>
                 </ul>
                 <div class="toggle-menu">
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-close"></i>
+                    <i class="fas fa-bars" id="toggle_open"></i>
+                    <i class="fas fa-close" id="toggle_close"></i>
                 </div>
             </nav>
         </header>
         <main class="main">
             <div class="info-content">
                 <span class="info-content_subtitle">Full-Stack Developer</span>
-                <h1>HELLO, WORLD!</h1>
+                <h1>WELCOME!</h1>
                 <h1>I am <span>Frailin</span> Pernalete</h1>
-                <p>Welcome to my personal web page, i am going to give you a little tour about my personal and professional life, are you ready? .</p>
+                <div class="sotial-network info-content__sotial-network">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <p class="info-content__p">Welcome to my personal web page, i am going to give you a little tour about my personal and professional life, are you ready? .</p>
                 <a download href="#">
                     <button class="download-my-cv"> Download my CV</button>
                 </a>   
@@ -79,7 +84,7 @@
                     </a>
                 </div>
             <div class="proyect-details-content">
-                <button class="project-details download-my-cv">
+                <button class="project-details">
                     <a href="">
                     Project Details
                     </a>
@@ -104,7 +109,7 @@
                     </a>
                 </div>
             <div class="proyect-details-content">
-                <button class="project-details download-my-cv">
+                <button class="project-details">
                     <a href="">
                     Project Details
                     </a>
@@ -129,7 +134,7 @@
                     </a>
                 </div>
             <div class="proyect-details-content">
-                <button class="project-details download-my-cv">
+                <button class="project-details">
                     <a href="">
                     Project Details
                     </a>
@@ -145,7 +150,7 @@
         <div class="divider"></div>
     </div>
  <div class="container-contact">
-    <img src="./imagenes/contact-us-iphone.jpg" alt="contact Frailin Pernalete img">  
+    <img class="contact-section__img" src="./imagenes/contact-us-iphone.jpg" alt="contact Frailin Pernalete img">  
         <div class="contact-form">
             <h4>Send me a message...</h4>
                 <form class="form"> 
@@ -158,15 +163,16 @@
     </div>
 </div>
 
-<footer class="footer">
-    <h2>FRAILIN PERNALETE</h2>
-    <h4>Full-Stack Developer</h4>
-    <div>
-        <div class="sotial-network">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-    </div>
-</footer>
-</body>
+        <footer class="footer">
+                <h2>FRAILIN PERNALETE</h2>
+                <h4>Full-Stack Developer</h4>
+            <div class="sotial-network">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </footer>
+
+        <script src="./portfolio-app/Js/script.js"></script>
+    </body>
 </html>
