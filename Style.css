@@ -59,18 +59,29 @@ body {
     transition: ease-in-out .5s;
 }
 
+.info-content_subtitle{
+    margin-top: 1em;
+}
+
 .toggle-menu, 
-.info-content_subtitle {
+.info-content_subtitle,
+.info-content__sotial-network {
     display: none;
 }
 
-.main{
+.main {
     margin: 0 auto;
     width: 80vw;
     height: 80vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
+}
+
+.main img {
+    width: 400px;
+    height: 580px;
+    min-width: 100px;
 }
 
 h1{
@@ -80,7 +91,8 @@ span{
     color: #f3c80d;
 }
 
-.download-my-cv{
+.download-my-cv,
+.project-details {
     padding: 10px 20px;
     background-color: #f3c80d;
     border: none;
@@ -95,10 +107,6 @@ span{
     box-shadow: none;
 }
 
-.main img{
-    width: 400px;
-    height: 580px;
-}
 
 .about{
     display: grid;
@@ -107,7 +115,7 @@ span{
 }
 
 .about video{
-
+    
 }
 
 .about-info{
@@ -132,7 +140,8 @@ span{
     margin-bottom: 1em;
 }
 
-.portfolio{
+.portfolio, 
+.contact-section {
     width: 100vw;
     background-color: #1a0d34;
 } 
@@ -151,11 +160,11 @@ span{
 
 .portfolio .container{
     width: 80vw;
-    height: 60vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -305,6 +314,81 @@ span{
     justify-content: space-evenly;
     width: 300px;
     margin-top: 1em;
+}
+
+@media screen and (max-width: 800px) {
+
+    .menu {
+       flex-direction: column;
+       justify-content: center;
+       position: absolute;
+       top: 0;
+       left: 0;
+       height: 100vh;
+       width: 150px;
+       background-color: #6e58e8;
+       z-index: 1;
+       transform: translateX(-110%);
+       transition: all .5s ease-in-out;
+    }
+
+    .show-menu {
+        transform: translateX(0%); 
+    }
+
+    .menu li {
+        margin: 2em;
+    }
+
+    .toggle-menu{
+        display: block;
+    }
+
+    .main,
+    .about {
+        display: flex;
+        flex-direction: column-reverse; 
+    } 
+
+    .fa-bars {
+        font-size: 1.5em;
+        margin-top: -.2em;
+    }
+    .toggle-menu .fa-close {
+        font-size: 1.7em;
+        display: none;
+    }
+
+
+    .main img {
+        width:min(90%, 580px);
+        height: min(70%, 580px);
+    }
+
+    .info-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-content__sotial-network,
+    .info-content_subtitle {
+        display: block;
+        display: flex;
+        justify-content: space-evenly
+    }
+
+    .download-my-cv,
+    .info-content__p,
+    .contact-section__img{
+        display: none;
+    }
+
+    .form {
+        width: 50vw;
+    }
+    
 }
 
 
